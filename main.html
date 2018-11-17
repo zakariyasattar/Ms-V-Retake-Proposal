@@ -126,10 +126,11 @@
     var song1  = new Audio();
     var src1  = document.createElement("source");
     src1.type = "audio/mpeg";
-    src1.src  = "intheair.mp3";
+    src1.src  = "redwine.mp3";
     src1.volume = "0.2"
     song1.appendChild(src1);
     song1.play();
+    console.log(song1)
   }
   setTimeout(function (){
     song2()
@@ -138,10 +139,11 @@
     var song2  = new Audio();
     var src2  = document.createElement("source");
     src2.type = "audio/mpeg";
-    src2.src  = "redwine.mp3";
+    src2.src  = "intheair.mp3";
     src2.volume = "0.2"
     song2.appendChild(src2);
     song2.play();
+    console.log(song2)
   }
   setTimeout(function (){
     song3()
