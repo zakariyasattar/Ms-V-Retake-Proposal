@@ -130,7 +130,6 @@ iframe {
   background: #3bddd5;
   padding-top: 66px;
   padding-bottom: 66px;
-
 }
 #proposal h1 {
   font-size: 55px;
@@ -140,6 +139,8 @@ iframe {
   margin-left: 50px;
   margin-right: 75px;
   font-size: 35px;
+  width: 100%;
+  height: 25%;
 }
 #proposal .final {
   width: 75%;
