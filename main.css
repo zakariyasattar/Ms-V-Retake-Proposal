@@ -1,0 +1,207 @@
+*{font-family: 'Work Sans', sans-serif; margin: 0}
+body{
+  background: lightblue;
+  width: 100%;
+}
+
+tab1 { padding-left: 0.5em; }
+tab2 { padding-left: 8em; }
+tab3 { padding-left: 12em; }
+tab4 { padding-left: 16em; }
+tab5 { padding-left: 20em; }
+tab6 { padding-left: 24em; }
+tab7 { padding-left: 28em; }
+tab8 { padding-left: 32em; }
+tab9 { padding-left: 36em; }
+
+iframe {
+  position: relative;
+  left: 100px;
+  border: none;
+}
+
+#landing {
+  color: lightcoral;
+  padding-bottom: 66px;
+  padding-top: 30px;
+  width: 100%;
+}
+#options {
+  float:left;
+  margin-right: 20px;
+  color: cornflowerblue;
+}
+#landing p{
+  margin-right: 60px;
+  margin-left: 60px;
+  color: white;
+  font-size: 35px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+#landing span{
+  color: black;
+  font-size: 20px;
+}
+
+#landing h3{
+  margin-right: 60px;
+  margin-left: 60px;
+  color: black;
+  font-size: 35px;
+  position: relative;
+
+}
+
+#landing #quiz1 {
+  height: 370px;
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  left: 120px;
+  position: relative;
+  overflow: hidden;
+}
+#smart {
+  background: #02a6ed;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  color: white;
+}
+
+#smart p {
+  margin-left: 50px;
+  margin-right: 30px;
+  font-size: 25px;
+}
+#smart #quiz2 {
+  height: 370px;
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  left: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+#smart #quiz2 h2{
+  color: black;
+  font-size: 15px;
+}
+#smart j{
+  color: #edc602;
+  font-size: 25px;
+  position: relative;
+  left: 50px;
+}
+#material {
+  background: #02ed97;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  color: white;
+}
+#material p {
+  margin-left: 50px;
+  margin-right: 75px;
+  font-size: 25px;
+}
+
+#material #quiz3 {
+  height: 370px;
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  left: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+#material #quiz3 h2{
+  color: black;
+  font-size: 15px;
+}
+
+#proposal {
+  background: #3bddd5;
+  padding-top: 66px;
+  padding-bottom: 66px;
+
+}
+#proposal h1 {
+  font-size: 55px;
+  color: white;
+}
+#proposal p{
+  margin-left: 50px;
+  margin-right: 75px;
+  font-size: 35px;
+}
+#proposal .final {
+  width: 75%;
+  height: 15%;
+  background: #f70046;
+  color: white;
+  margin-left: 15%;
+}
+
+#proposal .yes {
+  width: 400px;
+  height: 50px;
+  position: relative;
+  background: #00a9f7;
+  top: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 12px;
+}
+#proposal .no {
+  border-radius: 12px;
+  width: 400px;
+  height: 50px;
+  background: #00a9f7;
+  margin-left: 40px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+#proposal .no:hover {
+  background: #6bdeef;
+  color: black;
+}
+
+#proposal .yes:hover {
+  background: #6bdeef;
+  color: black;
+}
+#landing button, #smart button{
+  background: #fcaed5;
+  border: none;
+  border-radius: 7px;
+  height: 45px;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  width: 75px;
+}
+
+#landing button:hover, #smart button:hover{
+  background: cornflowerblue;
+  border: none;
+  border-radius: 7px;
+  height: 45px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}

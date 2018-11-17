@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <style>
+    *{font-family: 'Open Sans', sans-serif;}
+
+    body{
+      background: #ef916b;
+
+    }
+
+    tab1 { padding-left: 0.5em; }
+    tab2 { padding-left: 8em; }
+    tab3 { padding-left: 12em; }
+    tab4 { padding-left: 16em; }
+    tab5 { padding-left: 20em; }
+    tab6 { padding-left: 24em; }
+    tab7 { padding-left: 28em; }
+    tab8 { padding-left: 32em; }
+    tab9 { padding-left: 36em; }
+
+    .warning h1{
+      color: red;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .warning p{
+      color: #4979fc;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .warning .bottom {
+      position: relative;
+      bottom: 10px;
+    }
+
+    .warning button{
+      background: #fcaed5;
+      border: none;
+      border-radius: 7px;
+      height: 45px;
+      color: black;
+      width: 200px;
+      cursor: pointer;
+      font-size: 15px;
+      overflow: hidden;
+    }
+
+    .warning button:hover{
+      background: cornflowerblue;
+      border: none;
+      border-radius: 7px;
+      height: 45px;
+
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .warning {
+      padding: 20px;
+
+      border-radius: 24px;
+      width: 825px;
+      height: 400px;
+      background: white;
+      box-shadow: 10px 15px #8c8a8a;
+
+      position:absolute; /*it can be fixed too*/
+      left:0; right:0;
+      top:0; bottom:0;
+      margin:auto;
+
+      /*this to solve "the content will not be cut when the window is smaller than the content": */
+      max-width:100%;
+      max-height:100%;
+      overflow:auto;
+    }
+  </style>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Watch Out, bro!</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/warning-sign_26a0.png">
+  </head>
+  <body>
+    <div class="warning">
+      <h1> Warning!</h1>
+      <p>
+        There are about to be some dope 🎶 up in here, so please plug in some headphones (wouldn't wanna disturb the baby)
+      </p>
+      <p>
+        Also, colors pop out more in Firefox than they do in Chrome BTW.
+      </p>
+      <br/>
+      <br/>
+
+      <center>
+        <a href="main.html"><button class="bottom">Ok, I Understand 🙄</button></a>
+        <tab1></tab1>
+          <a href="main.html"><button>I Could Not Care Less, Just Show Me The Money 🤑</button></a>
+      </center>
+    </div>
+  </body>
+</html>
