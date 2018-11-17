@@ -2,6 +2,7 @@
 body{
   background: lightblue;
   width: 100%;
+  height: 100%;
 }
 
 tab1 { padding-left: 0.5em; }
