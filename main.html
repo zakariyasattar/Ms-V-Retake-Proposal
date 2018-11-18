@@ -10,7 +10,9 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-
+    <audio src="redwine.mp3" id="song1" volume="0.1" style="display: none;"></audio>
+    <audio src="intheair.mp3" id="song2" volume="0.1" style="display: none;"></audio>
+    <audio src="poison.mp3" id="song3" volume="0.1" style="display: none;"></audio>
     <section id="landing">
       <h1 style="text-align: center;font-size: 50px; position: relative">Hello, Ms. Verceles!</h1>
       <p>
@@ -40,8 +42,7 @@
         <br/>
 
         <h3>Need Help? 🤔 Here Is My Solution</h3>
-        <iframe width="900px" height="400px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
+        <iframe width="900px" height="400px" src="https://www.youtube.com/embed/ivN5dDgobpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section id="smart">
@@ -77,8 +78,7 @@
       <br/>
       <br/>
       <p>Need Help? 🤔 Here Is My Solution</p>
-      <iframe width="900px" height="400px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-      </iframe>
+      <iframe width="900px" height="400px" src="https://www.youtube.com/embed/LCA4HH-qVwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <section id="material">
       <center><h1 style="font-size: 50px">I Know The Material Inside & Out!</h1></center>
@@ -86,7 +86,7 @@
       <br/>
       <p>I have been studying non-stop for this test. I have reviewed old homework and the quiz. I have watched the videos on
         your website and even some videos on YouTube. I think I am beyond ready for this retake and I believe that there is a
-        high chance that I even get a perfect score!
+        high chance that I even get a perfect score! 🤷‍♂️
       </p>
       <div id="quiz3">
         <center><h2>Does this equation have y-axis symmetry?</h2></center>
@@ -118,44 +118,42 @@
       <center><button class="yes">Zak is totally creative and deserves an extra retake! <br/>(do it for the baby)</button>
       <button class="no">Sorry, Zak did this to himself</button></center>
     </section>
+    <br/>
+    <br/>
+    <center><section id="answer">
+      <h1>DO YOU HAVE THE FINAL ANSWER?? 🤨🤨 </h1>
+      <br/>
+      <br/>
+      <button class="final" onclick="final()">Yes, of course 🤓</button>
+      <button class="final" onclick="swal('WOW','See me after class!!', 'warning')">You wish 😈</button>
+    </section></center>
+    <br/>
+    <br/>
   </body>
   <script>
-  song1();
-  function song1(){
-    var song1  = new Audio();
-    var src1  = document.createElement("source");
-    src1.type = "audio/mpeg";
-    src1.src  = "redwine.mp3";
-    src1.volume = "0.2"
-    song1.appendChild(src1);
-    song1.play();
-    console.log(song1)
+  function final() {
+    var answer = prompt("What is it then?");
+
+    if(answer == "boy"){
+      swal({
+      title: "You did it!!",
+      text: "Have a happy Thanksgiving",
+      icon: "trick.jpeg"
+      });
+    }
+    else{
+      swal("WRONG!!", "Dont bother trying again", "error")
+    }
   }
-  setTimeout(function (){
-    song2();
-  }, 294000);
-  function song2(){
-    var song2  = new Audio();
-    var src2  = document.createElement("source");
-    src2.type = "audio/mpeg";
-    src2.src  = "intheair.mp3";
-    src2.volume = "0.2"
-    song2.appendChild(src2);
-    song2.play();
-    console.log(song2)
-  }
-  setTimeout(function (){
-    song3()
-  }, 555000);
-  function song3(){
-    var song3  = new Audio();
-    var src3  = document.createElement("source");
-    src3.type = "audio/mpeg";
-    src3.src  = "poison.mp3";
-    src3.volume = "0.2"
-    song3.appendChild(src3);
-    song3.play();
-  }
+
+    document.querySelector("#song1").play();
+    setTimeout(function (){
+      document.querySelector("#song2").play();
+    }, 204000);
+    setTimeout(function (){
+      document.querySelector("#song3").play();
+    }, 498000);
+
     function quiz1(){
       var score = document.querySelector('input[name="val"]:checked').value;
 

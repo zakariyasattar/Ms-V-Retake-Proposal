@@ -130,6 +130,7 @@ iframe {
   background: #3bddd5;
   padding-top: 66px;
   padding-bottom: 66px;
+  padding-right: 40px;
 }
 #proposal h1 {
   font-size: 55px;
@@ -181,6 +182,25 @@ iframe {
 #proposal .yes:hover {
   background: #6bdeef;
   color: black;
+}
+#answer {
+  background: white;
+  color: #eaa835;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  border-radius: 60px;
+  width: 75%;
+}
+#answer h1 {
+  text-align: center;
+}
+#answer .final{
+  height: 25px;
+  width: 200px;
+  border: none;
+  border-radius: 12px;
+  background: #f7ba5d;
+  cursor: pointer;
 }
 #landing button, #smart button{
   background: #fcaed5;
