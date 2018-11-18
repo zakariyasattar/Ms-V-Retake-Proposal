@@ -10,6 +10,7 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <button class="pause" onclick="pauses()">Play/Pause Music</button>
     <audio src="redwine.mp3" id="song1" volume="0.1" style="display: none;"></audio>
     <audio src="intheair.mp3" id="song2" volume="0.1" style="display: none;"></audio>
     <audio src="poison.mp3" id="song3" volume="0.1" style="display: none;"></audio>
@@ -131,6 +132,21 @@
     <br/>
   </body>
   <script>
+  plays();
+  function pauses() {
+    var audio1 = document.getElementById('song1');
+    var audio2 = document.getElementById('song2');
+    var audio3 = document.getElementById('song3');
+
+    if(audio1.paused && audio2.pause && audio3.pause){
+      plays();
+    }
+    else{
+      audio1.pause();
+      audio2.pause();
+      audio3.pause();
+    }
+  }
   function final() {
     var answer = prompt("What is it then?");
 
@@ -146,6 +162,7 @@
     }
   }
 
+  function plays(){
     document.querySelector("#song1").play();
     setTimeout(function (){
       document.querySelector("#song2").play();
@@ -153,6 +170,7 @@
     setTimeout(function (){
       document.querySelector("#song3").play();
     }, 498000);
+  }
 
     function quiz1(){
       var score = document.querySelector('input[name="val"]:checked').value;

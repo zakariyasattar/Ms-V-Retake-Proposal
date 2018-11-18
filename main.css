@@ -21,6 +21,18 @@ iframe {
   border: none;
 }
 
+.pause {
+  float: right;
+  cursor: pointer;
+  overflow: hidden;
+	position: fixed;
+	right: 30px;
+	width: 200px;
+	height: 20px;
+	top: 30px;
+
+}
+
 #landing {
   color: lightcoral;
   padding-bottom: 66px;
