@@ -212,9 +212,10 @@ iframe {
   border: none;
   border-radius: 12px;
   background: #f7ba5d;
+  font-size: 15px;
   cursor: pointer;
 }
-#landing button, #smart button{
+#landing .submit, #smart button, #material button{
   background: #fcaed5;
   border: none;
   border-radius: 7px;
@@ -225,7 +226,7 @@ iframe {
   width: 75px;
 }
 
-#landing button:hover, #smart button:hover{
+#landing .submit:hover, #smart button:hover{
   background: cornflowerblue;
   border: none;
   border-radius: 7px;

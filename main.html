@@ -10,12 +10,13 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button class="pause" onclick="pauses()">Play/Pause Music</button>
+
     <audio src="redwine.mp3" id="song1" volume="0.1" style="display: none;"></audio>
     <audio src="intheair.mp3" id="song2" volume="0.1" style="display: none;"></audio>
     <audio src="poison.mp3" id="song3" volume="0.1" style="display: none;"></audio>
     <section id="landing">
       <h1 style="text-align: center;font-size: 50px; position: relative">Hello, Ms. Verceles!</h1>
+      <span><button class="pause" onclick="pauses()">Play/Pause Music</button></span>
       <p>
         Welcome, in this webpage you will take a series of quizzes and learn about why YOU should give me
         a retake for Quadratics Unit Exam Part 1. Each time you correctly answer a quiz, you will be granted a letter.
@@ -33,10 +34,10 @@
             <center><input style="float:left" type="radio" name="val" value="x = 2, x = 11" checked><span style="color: cornflowerblue">x = 2, x = 11</span><br/><br/>
             <input style="float:left" type="radio" name="val" value="x = 2, x = 13"> <span style="color: cornflowerblue">x = 2, x = 13</span><br/><br/>
             <input style="float:left" type="radio" name="val" value="My Baby Is Cute!"> <span style="color: cornflowerblue">My Baby Is Cute!</span><br/><br/>
-            <input style="float:left" type="radio" name="val" value="None Of The Above!"> <span style="color: cornflowerblue">None Of The Above!</span><br/><br/></center>
+            <input style="float:left" type="radio" name="val" value="None Of The Above!"> <span style="color: cornflowerblue">None Of The Above</span><br/><br/></center>
           </form>
           <br/>
-          <center><button onclick="quiz1()">Submit</button></center>
+          <center><button class="submit" onclick="quiz1()">Submit</button></center>
         </div>
         <br/>
         <br/>
@@ -68,10 +69,10 @@
         <center><img src="https://latex.codecogs.com/gif.latex?\dpi{200}&space;x^2&space;=&space;-&space;4x&space;-&space;8" title="x^2 = - 4x - 8" /></center>
         <br/>
         <form id="option">
-          <center><input style="float:left" type="radio" name="hell" value="hrllo" checked><span style="color: cornflowerblue">hrllo</span><br/><br/>
-          <input style="float:left" type="radio" name="hell" value="x = 2, x = 13"> <span style="color: cornflowerblue">x = 2, x = 13</span><br/><br/>
-          <input style="float:left" type="radio" name="hell" value="My Baby Is Cute!"> <span style="color: cornflowerblue">My Baby Is Cute!</span><br/><br/>
-          <input style="float:left" type="radio" name="hell" value="None Of The Above!"> <span style="color: cornflowerblue">None Of The Above!</span><br/><br/></center>
+          <center><input style="float:left" type="radio" name="hell" value="4 + 4i, 4 - 4i" checked><span style="color: cornflowerblue">4 + 4i, 4 - 4i</span><br/><br/>
+          <input style="float:left" type="radio" name="hell" value="2 + 2i, 2 - 2i"> <span style="color: cornflowerblue">2 + 2i, 2 - 2i</span><br/><br/>
+          <input style="float:left" type="radio" name="hell" value="2 + 2, 2 - 2"> <span style="color: cornflowerblue">2 + 2, 2 - 2</span><br/><br/>
+          <input style="float:left" type="radio" name="hell" value="4 + 4, 4 - 4"> <span style="color: cornflowerblue">4 + 4, 4 - 4</span><br/><br/></center>
         </form>
         <center><button onclick="quiz2()">Submit</button></center>
       </div>
@@ -89,19 +90,25 @@
         your website and even some videos on YouTube. I think I am beyond ready for this retake and I believe that there is a
         high chance that I even get a perfect score! 🤷‍♂️
       </p>
+      <br/>
+      <h2 style="position: relative; left: 20px; color: black">Your Last One, Are You Ready?</h2>
+      <br/>
       <div id="quiz3">
         <center><h2>Does this equation have y-axis symmetry?</h2></center>
         <center><img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;f(x)&space;=&space;(x&space;-&space;2)^2&space;&plus;&space;11" title="f(x) = (x - 2)^2 + 11" /></center>
         <br/>
         <form id="option">
-          <center><input style="float:left" type="radio" name="val" value="x = 2, x = 11" checked><span style="color: cornflowerblue">x = 2, x = 11</span><br/><br/>
-          <input style="float:left" type="radio" name="val" value="x = 2, x = 13"> <span style="color: cornflowerblue">x = 2, x = 13</span><br/><br/>
-          <input style="float:left" type="radio" name="val" value="My Baby Is Cute!"> <span style="color: cornflowerblue">My Baby Is Cute!</span><br/><br/>
-          <input style="float:left" type="radio" name="val" value="None Of The Above!"> <span style="color: cornflowerblue">None Of The Above!</span><br/><br/></center>
+          <center><input style="float:left" type="radio" name="quiz" value="Yes" checked><span style="color: cornflowerblue">Yes</span><br/><br/>
+          <input style="float:left" type="radio" name="quiz" value="No"> <span style="color: cornflowerblue">No</span><br/><br/>
+        </center>
         </form>
         <br/>
-        <center><button onclick="quiz1()">Submit</button></center>
+        <center><button onclick="quiz3()">Submit</button></center>
       </div>
+      <br/>
+      <br/>
+      <p>Need Help? 🤔 Here Is My Solution</p>
+      <iframe width="900px" height="400px" src="https://www.youtube.com/embed/LwwRsQpW5kI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <section id="proposal">
       <center><h1>My Proposal</h1></center>
@@ -116,8 +123,9 @@
       <br/>
       <center><h3 style="color: white">So, What Do You Say?</h3></center>
       <br/>
-      <center><button class="yes">Zak is totally creative and deserves an extra retake! <br/>(do it for the baby)</button>
-      <button class="no">Sorry, Zak did this to himself</button></center>
+      <center>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zakariyasattar03@gmail.com&su=Congrats%20Zak%20You%20Did%20It!!&body=What%20Led%20You%20To%20Make%20This%20Decision?%20" target="_blank"><button class="yes">Zak is totally creative and deserves an extra retake! <br/>(do it for the baby)</button></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zakariyasattar03@gmail.com&su=Sorry%20It%20Didnt%20Work%20Out,%20Dont%20Worry%20Though%20You%20Still%20Have%20Your%20Retake%20Next%20Semester&body=What%20Led%20You%20To%20Make%20This%20Decision?%20" target="_blank"><button class="no">Sorry, Zak did this to himself</button></a></center>
     </section>
     <br/>
     <br/>
@@ -126,10 +134,11 @@
       <br/>
       <br/>
       <button class="final" onclick="final()">Yes, of course 🤓</button>
-      <button class="final" onclick="swal('WOW','See me after class!!', 'warning')">You wish 😈</button>
+      <button class="final" onclick="swal('See me after class!!', '', 'warning')">You wish 😈</button>
     </section></center>
     <br/>
     <br/>
+
   </body>
   <script>
   plays();
@@ -186,8 +195,18 @@
       var score = document.querySelector('input[name="hell"]:checked').value;
       console.log(score)
 
-       if(score == "hrllo") {
+       if(score == "2 + 2i, 2 - 2i") {
          swal("Your Next Letter Is: O");
+       }
+       else{
+         swal("Sorry, As Tempting As It Was, It's Incorrect");
+       }
+    }
+    function quiz3(){
+      var score = document.querySelector('input[name="quiz"]:checked').value;
+
+       if(score == "Yes") {
+         swal("Your Last Letter Is: Y");
        }
        else{
          swal("Sorry, As Tempting As It Was, It's Incorrect");
