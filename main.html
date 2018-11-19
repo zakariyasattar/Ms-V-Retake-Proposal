@@ -145,7 +145,13 @@
 
   </body>
   <script>
-  plays();
+  document.querySelector("#song1").play();
+  setTimeout(function (){
+    document.querySelector("#song2").play();
+  }, 204000);
+  setTimeout(function (){
+    document.querySelector("#song3").play();
+  }, 498000);
   function pauses() {
     var audio1 = document.getElementById('song1');
     var audio2 = document.getElementById('song2');
