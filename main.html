@@ -31,8 +31,8 @@
           <center><img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;f(x)&space;=&space;(x&space;-&space;2)^2&space;&plus;&space;11" title="f(x) = (x - 2)^2 + 11" /></center>
           <br/>
           <form id="option">
-            <center><input style="float:left" type="radio" name="val" value="x = 2, x = 11" checked><span style="color: cornflowerblue">x = 2, x = 11</span><br/><br/>
-            <input style="float:left" type="radio" name="val" value="x = 2, x = 13"> <span style="color: cornflowerblue">x = 2, x = 13</span><br/><br/>
+            <center><input style="float:left" type="radio" name="val" value="x = 2, x = 11" checked><span style="color: cornflowerblue">(2, 11)</span><br/><br/>
+            <input style="float:left" type="radio" name="val" value="x = 2, x = 13"> <span style="color: cornflowerblue">(2, 13)</span><br/><br/>
             <input style="float:left" type="radio" name="val" value="My Baby Is Cute!"> <span style="color: cornflowerblue">My Baby Is Cute!</span><br/><br/>
             <input style="float:left" type="radio" name="val" value="None Of The Above!"> <span style="color: cornflowerblue">None Of The Above</span><br/><br/></center>
           </form>
@@ -73,10 +73,10 @@
         <center><img src="https://latex.codecogs.com/gif.latex?\dpi{200}&space;x^2&space;=&space;-&space;4x&space;-&space;8" title="x^2 = - 4x - 8" /></center>
         <br/>
         <form id="option">
-          <center><input style="float:left" type="radio" name="hell" value="4 + 4i, 4 - 4i" checked><span style="color: cornflowerblue">4 + 4i, 4 - 4i</span><br/><br/>
-          <input style="float:left" type="radio" name="hell" value="2 + 2i, 2 - 2i"> <span style="color: cornflowerblue">2 + 2i, 2 - 2i</span><br/><br/>
-          <input style="float:left" type="radio" name="hell" value="2 + 2, 2 - 2"> <span style="color: cornflowerblue">2 + 2, 2 - 2</span><br/><br/>
-          <input style="float:left" type="radio" name="hell" value="4 + 4, 4 - 4"> <span style="color: cornflowerblue">4 + 4, 4 - 4</span><br/><br/></center>
+          <center><input style="float:left" type="radio" name="hell" value="4 + 4i, 4 - 4i" checked><span style="color: cornflowerblue">-4 + 4i, -4 - 4i</span><br/><br/>
+          <input style="float:left" type="radio" name="hell" value="2 + 2i, 2 - 2i"> <span style="color: cornflowerblue">-2 + 2i, -2 - 2i</span><br/><br/>
+          <input style="float:left" type="radio" name="hell" value="2 + 2, 2 - 2"> <span style="color: cornflowerblue">2 + 2i, 2 - 2i</span><br/><br/>
+          <input style="float:left" type="radio" name="hell" value="4 + 4, 4 - 4"> <span style="color: cornflowerblue">4 + 4i, 4 - 4i</span><br/><br/></center>
         </form>
         <center><button onclick="quiz2()">Submit</button></center>
       </div>
@@ -215,7 +215,7 @@
     function quiz3(){
       var score = document.querySelector('input[name="quiz"]:checked').value;
 
-       if(score == "Yes") {
+       if(score == "No") {
          swal("Your Last Letter Is: Y");
        }
        else{
